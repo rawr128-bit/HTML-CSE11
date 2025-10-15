@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><form action=""></form></title>
+</head>
+<body>
+    <form action="reponse.htm" name="Biodata" target="_blank" method="get">
+        <fieldset>
+            <legend>Biodata</legend>
+             
+            <label for="name">Name </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name " required>
+            <br>
+
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass" placeholder="Enter your pass" required >
+
+            <br>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" name="dob" required>  
+            <br>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email " required > <!--why did we use email as email not text :- Default validation hai email ke liye it'll onlt take email as input -->
+            <br>
+            <label for="tel"> Phone</label>
+            <input type="tel" id="tel" name="tel" placeholder="Enter your number " required >
+            <br>
+            <label for="add">Address:</label>
+            <textarea name="text" id="add" rows="5" cols="30"></textarea>
+            <br> <br> <ul></ul>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" checked >
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="check">Vhicles you have</label>
+            <input type="checkbox" id="check" name="vehicle1" checked>
+            <label for="check" >Car</label>
+            <input type="checkbox" id="check" name="vehicle2">
+            <label for="check">Motorvehicles</label>
+
+            <br><br>
+            <label for="select">Select your progamming language</label>
+            <select name="select" id="select" >
+                <option value="">Select your language</option>
+                <optgroup label="Prog lang">
+                <option value="C++">C++</option>
+                <option value="C">C</option>
+                </optgroup>
+                <optgroup label="Frontend tech">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                </optgroup>
+                </select>
+               <br><br>
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" required>
+                <label for="file">File Upload</label>
+                <input type="file" id="file" name="file" required>
+                <label for="attempt">Attempt</label>
+                <input type="number" id="attempt" name="attempt " min="1" max="10" required>
+                <br><br>
+                <label for="appointment"> Appointment</label>
+                <input type="time" id="appointment" name="appointment" required>
+                <br><br>
+                <input type="input">
+                <input type="reset">
+               
+            
+        </fieldset>
+
+    </form>
+</body>
+</html>
